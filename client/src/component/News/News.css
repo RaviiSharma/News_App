@@ -1,0 +1,161 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #1b418d;
+}
+
+.logout-button {
+  width: 100%;
+  padding: 12px;
+  background: #fff;
+  color: rgb(20, 18, 18);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+}
+
+.news {
+  color: white;
+}
+
+article {
+  display: flex;
+  align-items: flex-start;
+}
+
+#heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.news-box {
+  width: 95%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.bottom-card {
+  padding: 5px;
+}
+
+#heading h1 span {
+  font-size: 1em;
+  color: #71bc2f;
+}
+
+article {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+article img {
+  margin-right: 15px;
+}
+
+span {
+  font-size: 11px;
+}
+p {
+  font-size: 13px;
+}
+h2 {
+  margin: 0;
+  padding: 0;
+  line-height: 1em;
+}
+
+@media (max-width: 779px) {
+  main {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  article {
+    flex-direction: column;
+  }
+  article img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .news-box {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.main {
+  max-width: 95%;
+  margin: auto;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.btn {
+  color: #ffffff;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card_content {
+  padding: 1rem;
+  background: linear-gradient(to bottom left, #105fb9 40%, #9efff2 100%);
+}
+
+.card_text {
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+  font-weight: 400;
+}
